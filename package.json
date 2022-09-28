@@ -2,7 +2,7 @@
   "name": "staticsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bobbythecatfish.github.io/main-site",
+  "homepage": "https://www.bobbythecat.fish",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
