@@ -1,24 +1,17 @@
-import {AppBar, Toolbar} from '@mui/material'
+import {AppBar, Box, Toolbar} from '@mui/material'
 import logo from '../assets/images/logo.png'
 import textLogo from '../assets/images/textlogo.png'
-import styled from 'styled-components'
 
 
 export function Header () {
   return (
-    <>
-      <AppBar position="sticky">
-        <Toolbar>
-          <HeaderImage src={logo} alt="BobbyTheCatfish" style={{ marginRight: "2%" }}/>
-          <HeaderImage src={textLogo} alt="BobbyTheCatfish"/>
-        </Toolbar>
-      </AppBar>
-    </>
+    <AppBar position="sticky">
+      <Toolbar>
+        <img height="60px" width="60px" src={logo} alt="" style={{ marginRight: "10px" }}/>
+        <Box sx={{ display: { xs: "none", sm: "initial" }}}>
+          <img height="60px" width="398px" src={textLogo} alt="BobbyTheCatfish"/>
+        </Box>
+      </Toolbar>
+    </AppBar>
   )
 }
-
-const HeaderImage = styled.img`
-  max-height: 60px;
-  overflow: scroll;
-  object-fit: scale-down;
-`

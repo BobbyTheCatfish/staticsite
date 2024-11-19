@@ -41,8 +41,7 @@ const Container = styled.button(props => ({
   boxShadow: "0px 1px 5px  0.35px #000",
   ":hover": {
     opacity: "100%",
-    scale: "1.2",
-    fontSize: "24px"
+    cursor: "pointer"
   },
   ":active": {
     opacity: "100%",
